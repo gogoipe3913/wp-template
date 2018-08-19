@@ -1,0 +1,180 @@
+
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans|Fresca|Poiret+One|Ubuntu");
+/* @import url("font-awesome.min.css"); */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800");
+@import url("http://fonts.googleapis.com/css?family=Dosis:200");
+@import url("http://fonts.googleapis.com/css?family=Economica");
+@import url("http://fonts.googleapis.com/css?family=Droid+Serif");
+
+/*Sample how to use font-family
+
+font-family: 'Poiret One', cursive;
+font-family: 'Fresca', sans-serif;
+font-family: 'Droid Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+* html body {font-family:"游ゴシック体", "Yu Gothic", YuGothic, sans-serif; font-size:75%;} for IE6
+*+html body {font-family:"游ゴシック体", "Yu Gothic", YuGothic, メイリオ,Meiryo,ＭＳ Ｐゴシック, sans-serif; font-size:75%;}  /*for IE7 */
+html>body {font-family:"游ゴシック体", "Yu Gothic", YuGothic, メイリオ,Meiryo,ＭＳ Ｐゴシック, sans-serif; font-size:75%;}  /*for IE8*/
+html:not(:target) body {font-size:12px; line-height:1.5em; font-family:"游ゴシック体", "Yu Gothic", YuGothic, 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,ＭＳ Ｐゴシック, Osaka, sans-serif;}
+
+body {
+    background: #f0f4f4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+a{
+  text-decoration: none;
+  text-decoration-color: #000;
+  color:#000;
+}
+img {
+    line-height: 100%;
+}
+
+#about {
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    display: none;
+}
+
+div#aboutInner {
+    width: 865px;
+    height:160px;
+    margin: 0 auto;
+    padding: 100px 0 90px 0;
+
+}
+
+#aboutInner dl {
+    float: left;
+    width: 660px;
+
+}
+
+#aboutInner dt {
+    float: left;
+    width: 110px;
+    line-height: 100%;
+
+
+}
+
+div.explain  {
+    width:300px;
+    margin: -4px 0 30px 110px;
+
+}
+
+.font {
+    font-family: 'Economica';
+    font-size: 108%;
+    letter-spacing: 0.1em;
+}
+
+#main{
+    position: relative;
+    animation: 1.6s forwards vanish;
+}
+@keyframes vanish {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+div#contents {
+    position: absolute;
+    top:70px;
+    background-color:#f0f4f4;
+    width: 810px;
+    height:1000px;
+    margin: 0 auto;
+    padding: 80px 0;
+    position: relative;
+
+}
+
+div#container {
+    padding-left: 150px;
+}
+
+.sec_title {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 65%;
+    background: url(../images/line_title.gif) no-repeat 100% 0;
+    padding-top: 15px;
+    line-height: 100%;
+}
+
+.sec_title h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+
+.sort{
+    color: #999;
+    margin-bottom: 5px;
+    font-family: 'Economica';
+    font-size: 108%;
+    letter-spacing: 0.1em;
+
+}
+.date{
+    color: #999;
+    margin-bottom: 5px;
+    font-family: 'Economica';
+    font-size: 108%;
+    letter-spacing: 0.1em;
+}
+
+.article {
+    text-align: right;
+    height:auto;
+}
+
+.works {
+    margin-bottom: 55px;
+}
+
+.works img {
+    width: 650px;
+    object-fit: cover;
+}
+
+@media screen and (max-device-width:480px) {
+  .sec_title {
+    padding-top: 20px;
+  }
+  .sec_title h2{
+    font-size: 17px;
+    margin-bottom: 18px;
+  }
+  .works {
+    margin-bottom: 165px;
+  }
+  .sort {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+  .date {
+    margin-bottom: 25px;
+    font-size: 19px;
+  }
+}
